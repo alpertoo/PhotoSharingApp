@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -19,13 +20,33 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: Any) {
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            // Log in the user
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { authDataResult, error in
+                if error != nil {
+                    self.errorMessage(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Try Again")
+                }else{
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+        }else{
+            self.errorMessage(titleInput: "Error!", messageInput:"E-mail or Password can't be empty")
+        }
     }
     
     @IBAction func signinTapped(_ sender: Any) {
         if emailTextField.text != "" && passwordTextField.text != "" {
             // Sign in the user
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { authDataResult, error in
+                if error != nil {
+                    // There is an error
+                    self.errorMessage(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Try Again")
+                }else{
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
         }else{
-            errorMessage(titleInput: "Error!", messageInput:"E-mail or Password can't be empty")
+            self.errorMessage(titleInput: "Error!", messageInput:"E-mail or Password can't be empty")
         }
     }
     
