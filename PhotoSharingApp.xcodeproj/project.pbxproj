@@ -10,6 +10,8 @@
 		9BC8556D295E37E700CCD3A8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8556C295E37E700CCD3A8 /* FeedViewController.swift */; };
 		9BC8556F295E381A00CCD3A8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8556E295E381A00CCD3A8 /* UploadViewController.swift */; };
 		9BC85571295E383000CCD3A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC85570295E383000CCD3A8 /* SettingsViewController.swift */; };
+		9BD2606029636A0000AA78EB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2605F29636A0000AA78EB /* FeedCell.swift */; };
+		9BD260632963852800AA78EB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD260622963852800AA78EB /* SDWebImage */; };
 		9BD9A826295CBB9300DCF551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A825295CBB9300DCF551 /* AppDelegate.swift */; };
 		9BD9A828295CBB9300DCF551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A827295CBB9300DCF551 /* SceneDelegate.swift */; };
 		9BD9A82A295CBB9300DCF551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A829295CBB9300DCF551 /* ViewController.swift */; };
@@ -26,6 +28,7 @@
 		9BC8556C295E37E700CCD3A8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9BC8556E295E381A00CCD3A8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		9BC85570295E383000CCD3A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9BD2605F29636A0000AA78EB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		9BD9A822295CBB9300DCF551 /* PhotoSharingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSharingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD9A825295CBB9300DCF551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BD9A827295CBB9300DCF551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 			files = (
 				9BD9A83D295CBD4300DCF551 /* FirebaseAuth in Frameworks */,
 				9BD9A83F295CBD4300DCF551 /* FirebaseFirestore in Frameworks */,
+				9BD260632963852800AA78EB /* SDWebImage in Frameworks */,
 				9BD9A841295CBD4300DCF551 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,7 @@
 				9BC8556C295E37E700CCD3A8 /* FeedViewController.swift */,
 				9BC8556E295E381A00CCD3A8 /* UploadViewController.swift */,
 				9BC85570295E383000CCD3A8 /* SettingsViewController.swift */,
+				9BD2605F29636A0000AA78EB /* FeedCell.swift */,
 				9BD9A82B295CBB9300DCF551 /* Main.storyboard */,
 				9BD9A82E295CBB9300DCF551 /* Assets.xcassets */,
 				9BD9A830295CBB9300DCF551 /* LaunchScreen.storyboard */,
@@ -105,6 +110,7 @@
 				9BD9A83C295CBD4300DCF551 /* FirebaseAuth */,
 				9BD9A83E295CBD4300DCF551 /* FirebaseFirestore */,
 				9BD9A840295CBD4300DCF551 /* FirebaseStorage */,
+				9BD260622963852800AA78EB /* SDWebImage */,
 			);
 			productName = PhotoSharingApp;
 			productReference = 9BD9A822295CBB9300DCF551 /* PhotoSharingApp.app */;
@@ -136,6 +142,7 @@
 			mainGroup = 9BD9A819295CBB9300DCF551;
 			packageReferences = (
 				9BD9A83B295CBD4300DCF551 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9BD260612963852800AA78EB /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 9BD9A823295CBB9300DCF551 /* Products */;
 			projectDirPath = "";
@@ -165,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD2606029636A0000AA78EB /* FeedCell.swift in Sources */,
 				9BD9A82A295CBB9300DCF551 /* ViewController.swift in Sources */,
 				9BC8556F295E381A00CCD3A8 /* UploadViewController.swift in Sources */,
 				9BD9A826295CBB9300DCF551 /* AppDelegate.swift in Sources */,
@@ -325,7 +333,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,7 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +406,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9BD260612963852800AA78EB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		9BD9A83B295CBD4300DCF551 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -409,6 +425,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9BD260622963852800AA78EB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BD260612963852800AA78EB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		9BD9A83C295CBD4300DCF551 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9BD9A83B295CBD4300DCF551 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
