@@ -12,6 +12,7 @@
 		9BC85571295E383000CCD3A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC85570295E383000CCD3A8 /* SettingsViewController.swift */; };
 		9BD2606029636A0000AA78EB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2605F29636A0000AA78EB /* FeedCell.swift */; };
 		9BD260632963852800AA78EB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD260622963852800AA78EB /* SDWebImage */; };
+		9BD2606529638B0200AA78EB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2606429638B0200AA78EB /* Post.swift */; };
 		9BD9A826295CBB9300DCF551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A825295CBB9300DCF551 /* AppDelegate.swift */; };
 		9BD9A828295CBB9300DCF551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A827295CBB9300DCF551 /* SceneDelegate.swift */; };
 		9BD9A82A295CBB9300DCF551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9A829295CBB9300DCF551 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		9BC8556E295E381A00CCD3A8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		9BC85570295E383000CCD3A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9BD2605F29636A0000AA78EB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		9BD2606429638B0200AA78EB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9BD9A822295CBB9300DCF551 /* PhotoSharingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSharingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD9A825295CBB9300DCF551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BD9A827295CBB9300DCF551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				9BC8556E295E381A00CCD3A8 /* UploadViewController.swift */,
 				9BC85570295E383000CCD3A8 /* SettingsViewController.swift */,
 				9BD2605F29636A0000AA78EB /* FeedCell.swift */,
+				9BD2606429638B0200AA78EB /* Post.swift */,
 				9BD9A82B295CBB9300DCF551 /* Main.storyboard */,
 				9BD9A82E295CBB9300DCF551 /* Assets.xcassets */,
 				9BD9A830295CBB9300DCF551 /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 				9BD2606029636A0000AA78EB /* FeedCell.swift in Sources */,
 				9BD9A82A295CBB9300DCF551 /* ViewController.swift in Sources */,
 				9BC8556F295E381A00CCD3A8 /* UploadViewController.swift in Sources */,
+				9BD2606529638B0200AA78EB /* Post.swift in Sources */,
 				9BD9A826295CBB9300DCF551 /* AppDelegate.swift in Sources */,
 				9BC8556D295E37E700CCD3A8 /* FeedViewController.swift in Sources */,
 				9BD9A828295CBB9300DCF551 /* SceneDelegate.swift in Sources */,
